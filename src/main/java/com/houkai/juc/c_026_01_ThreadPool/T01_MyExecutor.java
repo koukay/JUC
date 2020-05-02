@@ -1,0 +1,16 @@
+package com.houkai.juc.c_026_01_ThreadPool;
+
+import java.util.concurrent.Executor;
+
+public class T01_MyExecutor implements Executor {
+    public static void main(String[] args) {
+        new T01_MyExecutor().execute(()->{
+            System.out.println("hello executor");
+        });
+    }
+    @Override
+    public void execute(Runnable command) {
+//        new Thread(command).start();
+        command.run();//相当于执行命令
+    }
+}
