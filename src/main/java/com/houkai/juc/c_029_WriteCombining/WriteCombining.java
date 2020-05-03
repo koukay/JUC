@@ -1,5 +1,8 @@
 package com.houkai.juc.c_029_WriteCombining;
 
+/**
+ * 合并写
+ */
 public final class WriteCombining {
 
     private static final int ITERATIONS = Integer.MAX_VALUE;
