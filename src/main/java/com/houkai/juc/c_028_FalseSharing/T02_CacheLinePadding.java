@@ -2,7 +2,7 @@ package com.houkai.juc.c_028_FalseSharing;
 
 public class T02_CacheLinePadding {
     private static class Padding {
-        public volatile long p1, p2, p3, p4, p5, p6, p7;
+        public volatile long p1, p2, p3, p4, p5, p6, p7;//为了让每一个数都占一个缓存行,前面这7个占56位
     }
 
     private static class T extends Padding {

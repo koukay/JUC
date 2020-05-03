@@ -1,5 +1,8 @@
 package com.houkai.juc.c_028_FalseSharing;
 
+/**
+ * 对齐缓存行可以提升效率
+ */
 public class T01_CacheLinePadding {
     private static class T {
         public volatile long x = 0L;
